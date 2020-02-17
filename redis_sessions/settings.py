@@ -42,3 +42,6 @@ SESSION_REDIS_POOL = SESSION_REDIS.get('POOL', None)
 # should be on the format [(host, port), (host, port), (host, port)]
 SESSION_REDIS_SENTINEL_LIST = getattr(settings, 'SESSION_REDIS_SENTINEL_LIST', None)
 SESSION_REDIS_SENTINEL_MASTER_ALIAS = getattr(settings, 'SESSION_REDIS_SENTINEL_MASTER_ALIAS', None)
+
+# should be on the format [(host, port), (host, port), (host, port)]
+SESSION_REDIS_CLUSTER_LIST = getattr(settings, 'SESSION_REDIS_CLUSTER_LIST', None)

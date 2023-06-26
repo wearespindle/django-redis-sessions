@@ -68,8 +68,7 @@ class RedisServer():
         if self.connection_type == 'connection_object':
             self.__redis[self.connection_key] = settings.SESSION_REDIS_CONNECTION_OBJECT
         elif self.connection_type == 'cluster':
-            from rediscluster import RedisCluster
-            self.__redis[self.connection_key] = RedisCluster(
+            self.__redis[self.connection_key] = redis.RedisCluster(
                 startup_nodes=settings.SESSION_REDIS_CLUSTER_LIST,
             )
         elif self.connection_type == 'sentinel':

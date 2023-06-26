@@ -20,7 +20,7 @@ setup(
     license='BSD',
     packages=packages,
     zip_safe=False,
-    install_requires=['redis>=2.4.10', 'redis-py-cluster>=2.0.0'],
+    install_requires=['redis>=4.1.0'],
     include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 2",
